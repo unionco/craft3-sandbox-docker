@@ -6,6 +6,7 @@ web:
     - db
   volumes:
     - ./app:/var/www
+    - ./plugin:/var/www/plugin
     - ./app/web:/var/www/html
 
 db:

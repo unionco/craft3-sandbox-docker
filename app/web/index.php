@@ -2,7 +2,6 @@
 /**
  * Craft web bootstrap file
  */
-// phpinfo();die;
 // Set path constants
 define('CRAFT_BASE_PATH', dirname(__DIR__));
 define('CRAFT_VENDOR_PATH', CRAFT_BASE_PATH.'/vendor');

@@ -28,36 +28,11 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
     },
-    "repositories": [{
-            "type": "path",
-            "url": "./import",
-            "symlink": true
-        },
-        {
-            "type": "path",
-            "url": "./craftsyncdb"
-        },
-        {
-            "type": "path",
-            "url": "./syncdb"
-        },
-        {
-            "type": "path",
-            "url": "../../Library/relatedentrytypes"
-        },
-        {
-            "type": "path",
-            "url": "./googleservices"
-        },
+    "repositories": [
         {
             "symlink": true,
             "type": "path",
-            "url": "../../Library/geolocation/"
-        },
-        {
-            "symlink": true,
-            "type": "path",
-            "url": "../../Library/core"
+            "url": "./plugin"
         }
     ],
     "minimum-stability": "dev",
