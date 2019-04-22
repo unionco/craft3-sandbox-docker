@@ -4,10 +4,13 @@ web:
     - "8080:80"
   links:
     - db
+    - selenium
   volumes:
     - ./app:/var/www
+    - ./plugin/tests:/var/www/tests
     - ./plugin:/var/www/plugin
     - ./app/web:/var/www/html
+    - ./scripts:/root/scripts
 
 db:
   image: mariadb
@@ -21,3 +24,11 @@ db:
     MYSQL_DATABASE: database
   ports:
     - "8889:3306"
+
+selenium:
+  image: selenium/standalone-chrome
+  volumes:
+    - /dev/shm:/dev/shm
+  ports:
+    - "4444:4444"
+  
